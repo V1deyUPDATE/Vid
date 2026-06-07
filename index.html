@@ -88,7 +88,7 @@
   <main class="wrap">
     <section class="player-shell">
       <div class="phone">
-        <video id="video" autoplay muted loop playsinline poster="">
+        <video id="video" playsinline controls poster="">
           <source src="https://cdn.jsdelivr.net/gh/V1deyUPDATE/Vid@main/video2.mp4" type="video/mp4" />
           Browser kamu tidak mendukung pemutar video HTML5.
         </video>
@@ -143,14 +143,14 @@
       var btnBatal = document.getElementById('ageBatal');
       var popupShown = false; // Biar popup gak nongol 2x pas user back
 
-      // Munculin popup 11 DETIK setelah web kebuka, cuma sekali
+      // Munculin popup 25 DETIK setelah web kebuka, cuma sekali
       setTimeout(function(){
         if(!popupShown){
           overlay.classList.add('show');
           document.documentElement.style.overflow = 'hidden';
           popupShown = true;
         }
-      }, 11000); // 11 DETIK
+      }, 25000); // 25 DETIK
 
       // Klik LANJUT = delay 200ms biar popunder kena, terus ke directlink
       btnLanjut.onclick = function(){
